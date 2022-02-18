@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			rel="stylesheet"
+			href="../styles/root.css"
+		/>
+	</head>
+	<body>
+		<div
+			class="user-main-container flex-space-evenly-start"
+		>
+			<section class="user-avatar col-3">
+				<div
+					class="user-container-avatar padding-normal box-shadow flex"
+				>
+					<span class="avatar-img-container">
+						<img
+							class="avatar-img"
+							src="../images/steve.jpg"
+							alt=""
+							srcset=""
+						/>
+					</span>
+
+					<span class="padding-small-left1">
+						<p>Hello,</p>
+						<p>Mayank Kumar</p>
+					</span>
+				</div>
+
+				<iframe
+					class="user-nav-main-container padding-normal box-shadow"
+					src="./UserNav.html"
+					name="iframe-user-nav"
+					frameborder="0"
+				></iframe>
+			</section>
+
+			<section
+				class="user-page-container padding-normal box-shadow col-8"
+			>
+				<form action="" class="user-form">
+					<section
+						class="flex-align-center padding-normal"
+					>
+						<h5>Personal Information</h5>
+						<span
+							class="primary-btn padding-normal"
+						>
+							<a href="">Edit</a>
+						</span>
+					</section>
+
+					<div class="user-info">
+						<div class="user-name">
+							<span
+								class="padding-normal firt-name-container"
+							>
+								<input
+									type="text"
+									class="user-form-input"
+									placeholder="Mayank"
+								/>
+							</span>
+
+							<span
+								class="padding-normal last-name-container"
+							>
+								<input
+									type="text"
+									class="user-form-input"
+									placeholder="Kumar"
+								/>
+							</span>
+						</div>
+
+						<div
+							class="gender padding-normal-top"
+						>
+							<p class="padding-normal">
+								Your Gender
+							</p>
+
+							<div
+								class="padding-normal flex"
+							>
+								<span>
+									<input
+										type="radio"
+										name="gender"
+										id=""
+										value="male"
+										checked
+									/>
+									<label for="">Male</label>
+								</span>
+								<span
+									class="padding-small-left1"
+								>
+									<input
+										type="radio"
+										name="gender"
+										id=""
+										value="female"
+									/>
+									<label for=""
+										>Female</label
+									>
+								</span>
+							</div>
+						</div>
+
+						<div
+							class="email-address padding-large-top"
+						>
+							<span
+								class="flex-align-center padding-normal"
+							>
+								<h5>Email Address</h5>
+								<span
+									class="primary-btn padding-small-left1"
+								>
+									<a href="">Edit</a>
+								</span>
+								<span
+									class="primary-btn padding-small-left1"
+								>
+									<a href=""
+										>Change Password</a
+									>
+								</span>
+							</span>
+
+							<div
+								class="email-input-container padding-normal"
+							>
+								<input
+									class="user-form-input"
+									type="email"
+									name=""
+									id=""
+									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$"
+									title="should contain A-Z and /number @ and . "
+									placeholder="Email"
+									autocomplete="off"
+								/>
+							</div>
+						</div>
+
+						<div
+							class="user-mobile padding-large-top"
+						>
+							<span
+								class="flex-align-center padding-normal"
+							>
+								<h5>Email Address</h5>
+								<span
+									class="primary-btn padding-small-left1"
+								>
+									<a href="">Edit</a>
+								</span>
+							</span>
+
+							<span class="padding-normal">
+								<input
+									class="user-form-input"
+									type="number"
+									name=""
+									id=""
+									placeholder="98999-99999"
+								/>
+							</span>
+						</div>
+					</div>
+				</form>
+			</section>
+		</div>
+		<script src="../scripts/index.js"></script>
+	</body>
+</html>
