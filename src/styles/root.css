@@ -236,3 +236,7 @@ hr {
 .iframeHeaderContainer {
 	position: fixed;
 }
+
+.iframe-login-container {
+	position: absolute;
+}
