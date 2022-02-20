@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			rel="stylesheet"
+			href="../styles/root.css"
+		/>
+	</head>
+	<body>
+		<!---------------------------------Wishlist main container--------------------------->
+
+		<div
+			class="product-list-container user-main-container flex-space-evenly-start container-bg"
+		>
+			<nav
+				class="filter-container box-shadow col-3"
+			>
+				<form>
+					<section
+						class="filter-section flex-row-spc-btw"
+					>
+						<h4 class="padding-normal">
+							Filter
+						</h4>
+						<button
+							class="padding-normal button-transparent"
+						>
+							<input
+								class="button-transparent text-large"
+								type="reset"
+								value="Clear"
+							/>
+						</button>
+					</section>
+
+					<section
+						class="filter-categories flex-column-start"
+					>
+						<h4>Price</h4>
+						<span
+							class="flex padding-normal-left0"
+						>
+							<form>
+								<div>
+									<label>$0</label>
+									<input
+										class="cart-items-input"
+										id="rangeInput"
+										type="range"
+										min="0"
+										max="20000"
+										oninput="amount.value=rangeInput.value"
+									/>
+									<span>$</span>
+									<input
+										class="cart-items-input filter-input-range"
+										id="amount"
+										type="number"
+										value="0"
+										min="0"
+										max="2000"
+										oninput="rangeInput.value=amount.value"
+									/>
+								</div>
+							</form>
+						</span>
+					</section>
+
+					<section
+						class="filter-categories flex-column-start"
+					>
+						<h4>Category</h4>
+						<span
+							class="flex padding-normal-left0"
+						>
+							<input
+								class="input-radio"
+								type="checkbox"
+								name="category"
+								value=""
+							/>
+							<p class="padding-small-left1">
+								Intel
+							</p>
+						</span>
+						<span
+							class="flex padding-normal-left0"
+						>
+							<input
+								class="input-radio"
+								type="checkbox"
+								name="category"
+								value=""
+							/>
+							<p class="padding-small-left1">
+								AMD
+							</p>
+						</span>
+					</section>
+
+					<section
+						class="filter-categories flex-column-start"
+					>
+						<h4>Rating</h4>
+						<span
+							class="flex padding-normal-left0"
+						>
+							<input
+								class="input-radio"
+								type="radio"
+								name="rating"
+								value=""
+							/>
+							<p class="padding-small-left1">
+								4 Stars & Above
+							</p>
+						</span>
+						<span
+							class="flex padding-normal-left0"
+						>
+							<input
+								class="input-radio"
+								type="radio"
+								name="rating"
+								value=""
+							/>
+							<p class="padding-small-left1">
+								3 Stars & Above
+							</p>
+						</span>
+						<span
+							class="flex padding-normal-left0"
+						>
+							<input
+								class="input-radio"
+								type="radio"
+								name="rating"
+								value=""
+							/>
+							<p class="padding-small-left1">
+								2 Stars & Above
+							</p>
+						</span>
+						<span
+							class="flex padding-normal-left0"
+						>
+							<input
+								class="input-radio"
+								type="radio"
+								name="rating"
+								value=""
+							/>
+							<p class="padding-small-left1">
+								1 Stars & Above
+							</p>
+						</span>
+					</section>
+
+					<section
+						class="filter-categories flex-column-start"
+					>
+						<h4>Sort by</h4>
+						<span
+							class="flex padding-normal-left0"
+						>
+							<input
+								class="input-radio"
+								type="radio"
+								name="short"
+								value=""
+							/>
+							<p class="padding-small-left1">
+								Price-Low to High
+							</p>
+						</span>
+						<span
+							class="flex padding-normal-left0"
+						>
+							<input
+								class="input-radio"
+								type="radio"
+								name="short"
+								value=""
+							/>
+							<p class="padding-small-left1">
+								Price-High to Low
+							</p>
+						</span>
+					</section>
+				</form>
+			</nav>
+
+			<main
+				class="product-container mid-container container-bg col-9"
+			>
+				<!-------------------------Card Container start-------------------------->
+				<div
+					class="card-container buttonHoverShadow"
+				>
+					<section class="flex-row-start">
+						<img
+							class="imgcard"
+							src="../images/pc-svg-1.svg"
+							alt=""
+						/>
+						<button
+							class="material-icons-text card-wishlist-icons buttonHoverShadow AvatarImage AvatarIcons flex-row-center icon-wishlist"
+						>
+							<i class="material-icons"
+								>favorite
+							</i>
+						</button>
+					</section>
+					<span
+						class="card-text-container card-brand-text"
+					>
+						<span class="card-description">
+							<h5>
+								Product description One
+							</h5>
+							<p>
+								Lorem ipsum dolor sit amet
+								consectetur adipisicing elit.
+							</p>
+							<span
+								class="rating-container"
+							></span>
+							<h6>product type</h6>
+						</span>
+
+						<span
+							class="card-container-price-icons card-footer"
+						>
+							<span class="card-price">
+								<span>$200</span>
+								<del>$300</del>
+							</span>
+							<span class="optionContainer">
+								<button
+									class="card-wishlist-icons buttonHoverShadow icons-btn-hover AvatarImage flex-row-center primary-btn padding-normal"
+								>
+									Add<i
+										class="material-icons"
+										>add_shopping_cart
+									</i>
+								</button>
+							</span>
+						</span>
+					</span>
+
+					<span> </span>
+				</div>
+				<!-------------------------Card Container end-------------------------->
+
+				<!-------------------------Card Container start-------------------------->
+				<div
+					class="card-container buttonHoverShadow"
+				>
+					<section class="flex-row-start">
+						<img
+							class="imgcard"
+							src="../images/pc-svg-1.svg"
+							alt=""
+						/>
+						<button
+							class="material-icons-text card-wishlist-icons buttonHoverShadow AvatarImage AvatarIcons flex-row-center icon-wishlist"
+						>
+							<i class="material-icons"
+								>favorite
+							</i>
+						</button>
+					</section>
+					<span
+						class="card-text-container card-brand-text"
+					>
+						<span class="card-description">
+							<h5>
+								Product description One
+							</h5>
+							<p>
+								Lorem ipsum dolor sit amet
+								consectetur adipisicing elit.
+							</p>
+							<span
+								class="rating-container"
+							></span>
+							<h6>product type</h6>
+						</span>
+
+						<span
+							class="card-container-price-icons card-footer"
+						>
+							<span class="card-price">
+								<span>$200</span>
+								<del>$300</del>
+							</span>
+							<span class="optionContainer">
+								<button
+									class="card-wishlist-icons buttonHoverShadow icons-btn-hover AvatarImage flex-row-center primary-btn padding-normal"
+								>
+									Add<i
+										class="material-icons"
+										>add_shopping_cart
+									</i>
+								</button>
+							</span>
+						</span>
+					</span>
+
+					<span> </span>
+				</div>
+				<!-------------------------Card Container end-------------------------->
+
+				<!-------------------------Card Container start-------------------------->
+				<div
+					class="card-container buttonHoverShadow"
+				>
+					<section class="flex-row-start">
+						<img
+							class="imgcard"
+							src="../images/pc-svg-1.svg"
+							alt=""
+						/>
+						<button
+							class="material-icons-text card-wishlist-icons buttonHoverShadow AvatarImage AvatarIcons flex-row-center icon-wishlist"
+						>
+							<i class="material-icons"
+								>favorite
+							</i>
+						</button>
+					</section>
+					<span
+						class="card-text-container card-brand-text"
+					>
+						<span class="card-description">
+							<h5>
+								Product description One
+							</h5>
+							<p>
+								Lorem ipsum dolor sit amet
+								consectetur adipisicing elit.
+							</p>
+							<span
+								class="rating-container"
+							></span>
+							<h6>product type</h6>
+						</span>
+
+						<span
+							class="card-container-price-icons card-footer"
+						>
+							<span class="card-price">
+								<span>$200</span>
+								<del>$300</del>
+							</span>
+							<span class="optionContainer">
+								<button
+									class="card-wishlist-icons buttonHoverShadow icons-btn-hover AvatarImage flex-row-center primary-btn padding-normal"
+								>
+									Add<i
+										class="material-icons"
+										>add_shopping_cart
+									</i>
+								</button>
+							</span>
+						</span>
+					</span>
+
+					<span> </span>
+				</div>
+				<!-------------------------Card Container end-------------------------->
+
+				<!-------------------------Card Container start-------------------------->
+				<div
+					class="card-container buttonHoverShadow"
+				>
+					<section class="flex-row-start">
+						<img
+							class="imgcard"
+							src="../images/pc-svg-1.svg"
+							alt=""
+						/>
+						<button
+							class="material-icons-text card-wishlist-icons buttonHoverShadow AvatarImage AvatarIcons flex-row-center icon-wishlist"
+						>
+							<i class="material-icons"
+								>favorite
+							</i>
+						</button>
+					</section>
+					<span
+						class="card-text-container card-brand-text"
+					>
+						<span class="card-description">
+							<h5>
+								Product description One
+							</h5>
+							<p>
+								Lorem ipsum dolor sit amet
+								consectetur adipisicing elit.
+							</p>
+							<span
+								class="rating-container"
+							></span>
+							<h6>product type</h6>
+						</span>
+
+						<span
+							class="card-container-price-icons card-footer"
+						>
+							<span class="card-price">
+								<span>$200</span>
+								<del>$300</del>
+							</span>
+							<span class="optionContainer">
+								<button
+									class="card-wishlist-icons buttonHoverShadow icons-btn-hover AvatarImage flex-row-center primary-btn padding-normal"
+								>
+									Add<i
+										class="material-icons"
+										>add_shopping_cart
+									</i>
+								</button>
+							</span>
+						</span>
+					</span>
+
+					<span> </span>
+				</div>
+				<!-------------------------Card Container end-------------------------->
+
+				<!-------------------------Card Container start-------------------------->
+				<div
+					class="card-container buttonHoverShadow"
+				>
+					<section class="flex-row-start">
+						<img
+							class="imgcard"
+							src="../images/pc-svg-1.svg"
+							alt=""
+						/>
+						<button
+							class="material-icons-text card-wishlist-icons buttonHoverShadow AvatarImage AvatarIcons flex-row-center icon-wishlist"
+						>
+							<i class="material-icons"
+								>favorite
+							</i>
+						</button>
+					</section>
+					<span
+						class="card-text-container card-brand-text"
+					>
+						<span class="card-description">
+							<h5>
+								Product description One
+							</h5>
+							<p>
+								Lorem ipsum dolor sit amet
+								consectetur adipisicing elit.
+							</p>
+							<span
+								class="rating-container"
+							></span>
+							<h6>product type</h6>
+						</span>
+
+						<span
+							class="card-container-price-icons card-footer"
+						>
+							<span class="card-price">
+								<span>$200</span>
+								<del>$300</del>
+							</span>
+							<span class="optionContainer">
+								<button
+									class="card-wishlist-icons buttonHoverShadow icons-btn-hover AvatarImage flex-row-center primary-btn padding-normal"
+								>
+									Add<i
+										class="material-icons"
+										>add_shopping_cart
+									</i>
+								</button>
+							</span>
+						</span>
+					</span>
+
+					<span> </span>
+				</div>
+				<!-------------------------Card Container end-------------------------->
+
+				<!-------------------------Card Container start-------------------------->
+				<div
+					class="card-container buttonHoverShadow"
+				>
+					<section class="flex-row-start">
+						<img
+							class="imgcard"
+							src="../images/pc-svg-1.svg"
+							alt=""
+						/>
+						<button
+							class="material-icons-text card-wishlist-icons buttonHoverShadow AvatarImage AvatarIcons flex-row-center icon-wishlist"
+						>
+							<i class="material-icons"
+								>favorite
+							</i>
+						</button>
+					</section>
+					<span
+						class="card-text-container card-brand-text"
+					>
+						<span class="card-description">
+							<h5>
+								Product description One
+							</h5>
+							<p>
+								Lorem ipsum dolor sit amet
+								consectetur adipisicing elit.
+							</p>
+							<span
+								class="rating-container"
+							></span>
+							<h6>product type</h6>
+						</span>
+
+						<span
+							class="card-container-price-icons card-footer"
+						>
+							<span class="card-price">
+								<span>$200</span>
+								<del>$300</del>
+							</span>
+							<span class="optionContainer">
+								<button
+									class="card-wishlist-icons buttonHoverShadow icons-btn-hover AvatarImage flex-row-center primary-btn padding-normal"
+								>
+									Add<i
+										class="material-icons"
+										>add_shopping_cart
+									</i>
+								</button>
+							</span>
+						</span>
+					</span>
+
+					<span> </span>
+				</div>
+				<!-------------------------Card Container end-------------------------->
+
+				<!-------------------------Card Container start-------------------------->
+				<div
+					class="card-container buttonHoverShadow"
+				>
+					<section class="flex-row-start">
+						<img
+							class="imgcard"
+							src="../images/pc-svg-1.svg"
+							alt=""
+						/>
+						<button
+							class="material-icons-text card-wishlist-icons buttonHoverShadow AvatarImage AvatarIcons flex-row-center icon-wishlist"
+						>
+							<i class="material-icons"
+								>favorite
+							</i>
+						</button>
+					</section>
+					<span
+						class="card-text-container card-brand-text"
+					>
+						<span class="card-description">
+							<h5>
+								Product description One
+							</h5>
+							<p>
+								Lorem ipsum dolor sit amet
+								consectetur adipisicing elit.
+							</p>
+							<span
+								class="rating-container"
+							></span>
+							<h6>product type</h6>
+						</span>
+
+						<span
+							class="card-container-price-icons card-footer"
+						>
+							<span class="card-price">
+								<span>$200</span>
+								<del>$300</del>
+							</span>
+							<span class="optionContainer">
+								<button
+									class="card-wishlist-icons buttonHoverShadow icons-btn-hover AvatarImage flex-row-center primary-btn padding-normal"
+								>
+									Add<i
+										class="material-icons"
+										>add_shopping_cart
+									</i>
+								</button>
+							</span>
+						</span>
+					</span>
+
+					<span> </span>
+				</div>
+				<!-------------------------Card Container end-------------------------->
+
+				<!-------------------------Card Container start-------------------------->
+				<div
+					class="card-container buttonHoverShadow"
+				>
+					<section class="flex-row-start">
+						<img
+							class="imgcard"
+							src="../images/pc-svg-1.svg"
+							alt=""
+						/>
+						<button
+							class="material-icons-text card-wishlist-icons buttonHoverShadow AvatarImage AvatarIcons flex-row-center icon-wishlist"
+						>
+							<i class="material-icons"
+								>favorite
+							</i>
+						</button>
+					</section>
+					<span
+						class="card-text-container card-brand-text"
+					>
+						<span class="card-description">
+							<h5>
+								Product description One
+							</h5>
+							<p>
+								Lorem ipsum dolor sit amet
+								consectetur adipisicing elit.
+							</p>
+							<span
+								class="rating-container"
+							></span>
+							<h6>product type</h6>
+						</span>
+
+						<span
+							class="card-container-price-icons card-footer"
+						>
+							<span class="card-price">
+								<span>$200</span>
+								<del>$300</del>
+							</span>
+							<span class="optionContainer">
+								<button
+									class="card-wishlist-icons buttonHoverShadow icons-btn-hover AvatarImage flex-row-center primary-btn padding-normal"
+								>
+									Add<i
+										class="material-icons"
+										>add_shopping_cart
+									</i>
+								</button>
+							</span>
+						</span>
+					</span>
+
+					<span> </span>
+				</div>
+				<!-------------------------Card Container end-------------------------->
+
+				<!-------------------------Card Container start-------------------------->
+				<div
+					class="card-container buttonHoverShadow"
+				>
+					<section class="flex-row-start">
+						<img
+							class="imgcard"
+							src="../images/pc-svg-1.svg"
+							alt=""
+						/>
+						<button
+							class="material-icons-text card-wishlist-icons buttonHoverShadow AvatarImage AvatarIcons flex-row-center icon-wishlist"
+						>
+							<i class="material-icons"
+								>favorite
+							</i>
+						</button>
+					</section>
+					<span
+						class="card-text-container card-brand-text"
+					>
+						<span class="card-description">
+							<h5>
+								Product description One
+							</h5>
+							<p>
+								Lorem ipsum dolor sit amet
+								consectetur adipisicing elit.
+							</p>
+							<span
+								class="rating-container"
+							></span>
+							<h6>product type</h6>
+						</span>
+
+						<span
+							class="card-container-price-icons card-footer"
+						>
+							<span class="card-price">
+								<span>$200</span>
+								<del>$300</del>
+							</span>
+							<span class="optionContainer">
+								<button
+									class="card-wishlist-icons buttonHoverShadow icons-btn-hover AvatarImage flex-row-center primary-btn padding-normal"
+								>
+									Add<i
+										class="material-icons"
+										>add_shopping_cart
+									</i>
+								</button>
+							</span>
+						</span>
+					</span>
+
+					<span> </span>
+				</div>
+				<!-------------------------Card Container end-------------------------->
+
+				<!-------------------------Card Container start-------------------------->
+				<div
+					class="card-container buttonHoverShadow"
+				>
+					<section class="flex-row-start">
+						<img
+							class="imgcard"
+							src="../images/pc-svg-1.svg"
+							alt=""
+						/>
+						<button
+							class="material-icons-text card-wishlist-icons buttonHoverShadow AvatarImage AvatarIcons flex-row-center icon-wishlist"
+						>
+							<i class="material-icons"
+								>favorite
+							</i>
+						</button>
+					</section>
+					<span
+						class="card-text-container card-brand-text"
+					>
+						<span class="card-description">
+							<h5>
+								Product description One
+							</h5>
+							<p>
+								Lorem ipsum dolor sit amet
+								consectetur adipisicing elit.
+							</p>
+							<span
+								class="rating-container"
+							></span>
+							<h6>product type</h6>
+						</span>
+
+						<span
+							class="card-container-price-icons card-footer"
+						>
+							<span class="card-price">
+								<span>$200</span>
+								<del>$300</del>
+							</span>
+							<span class="optionContainer">
+								<button
+									class="card-wishlist-icons buttonHoverShadow icons-btn-hover AvatarImage flex-row-center primary-btn padding-normal"
+								>
+									Add<i
+										class="material-icons"
+										>add_shopping_cart
+									</i>
+								</button>
+							</span>
+						</span>
+					</span>
+
+					<span> </span>
+				</div>
+				<!-------------------------Card Container end-------------------------->
+			</main>
+		</div>
+
+		<script src="../scripts/index.js"></script>
+	</body>
+</html>
